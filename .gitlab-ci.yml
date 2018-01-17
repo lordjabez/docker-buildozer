@@ -1,0 +1,16 @@
+image: docker
+
+build:
+  stage: build
+  script:
+    - bin/build.bash
+
+test:
+  stage: test
+  script:
+    - bin/test.bash
+
+deploy:
+  stage: deploy
+  script:
+    - bin/deploy.bash
