@@ -7,10 +7,11 @@ package.domain = com.example
 source.dir = .
 source.include_exts = py
 
-version.regex = __version__ = '(.*)'
-version.filename = %(source.dir)s/main.py
+version = 0.0.1
 
 requirements = kivy
+
+fullscreen = 1
 
 android.api = 19
 android.minapi = 9
@@ -19,3 +20,5 @@ android.ndk = 9c
 
 
 [buildozer]
+
+log_level = 2
